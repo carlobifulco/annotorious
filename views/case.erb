@@ -1,0 +1,64 @@
+<br><br><br>
+<div>
+  <div class="control-group">
+    <input name="textinput1" id="case" type="">
+  </div>
+  <a class="btn btn-primary" id="find" href="#">
+    Find Case
+  </a>
+</div>
+
+
+
+
+<br>
+<br>
+
+
+<script id="images_template"  type="text/x-handlebars-template">
+  <div >
+    <h4> Images </h4>
+    <ul>
+      {{#each images}}
+      <li>{{this.img_slide_name}}</li>
+      <li><a href="{{this.img_overlay}}">Overlay</a></li>
+       <li><a href="{{this.img_original}}">Original</a></li>
+ 
+      {{/each}}
+    </ul>
+  </div>
+</script>
+
+
+<script id="results_template"  type="text/x-handlebars-template">
+  <div>
+    <h4>Results</h4>
+    <ul>
+      {{#each markers}}
+      <div id="marker" class="overlay1">
+       <h5>  Marker: {{this.marker_name}}</h5>
+      </div>
+
+        <div>
+         <li> Percentage positive:  {{this.percentage_positive}}%</li>
+         <li> Number positive: {{this.n_negative}}</li>
+         <li> Number negative: {{this.n_positive}}</li>
+        </div>
+
+      {{/each}}
+    </ul>
+  </div>
+</script>
+
+
+
+<div class="row">
+<span class="span6" id="images_html" </span>
+</div>
+
+<div class="row">
+<span class="span6" id="results_html" </span>
+</div>
+
+<script src="views/case.js" type="text/javascript" charset="utf-8"></script>
+

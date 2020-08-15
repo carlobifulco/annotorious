@@ -1,0 +1,101 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html lang="en">
+  <head
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+  <title>
+      PdxMoLab WSI Server
+    </title>
+
+
+  <link href="/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+  <link href="/css/tabs.css" type="text/css" rel="sdtylesheet">
+  <link href="/css/style.css" type="text/css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="/favicon/b.png"/>
+  <script src="/js/jquery.1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/js/jquery.sparkline.min.js" type="text/javascript" charset="utf-8"></script>
+   <script src="/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/js/handlebars-1.0.rc.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/js/underscore-min.js" type="text/javascript" charset="utf-8"></script>
+ <script src="/js/bootstrap-tab.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/js/bootstrap-modal.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/js/keyboard.0.2.2.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/js/render.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/js/openseadragon.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/js/openseadragon.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/js/openseadragon-annotorious.min.js" type="text/javascript" charset="utf-8"></script>
+
+
+  <!-- <script src="http://d3js.org/d3.v2.js"></script>-->
+
+
+
+  </head>
+  <body>
+
+<div class="navbar navbar-fixed-top">
+ <div class="navbar-inner">
+   <div class="container">
+
+
+      <a class="brand" href="/">
+        PdxMoLab WSI Server
+      </a>
+
+      <ul class="nav">
+       <!--  <li><a href="/scan">Rescan Results</a></li>
+        <li><a href="/">Search Results</a></li> -->
+
+     <!--    <li><a href="/entry">Test</a></li>
+        <li><a href="/live">Ignore</a></li> -->
+
+        <li>
+          <a href="/api">
+            API
+          </a>
+        </li>
+
+
+
+   <!--      <li><a href="/logout">Logout</a></li> -->
+
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+
+    <div id="main">
+      <div class='container'>
+       <%= yield %>
+      </div>
+    </div>
+
+  <!-- <table
+        border="0" cellpadding="0" cellspacing="0" class="label">
+          <tr>
+          <td><small>(c) Copyright 2009 Carlo B. Bifulco. All Rights Reserved.</small></td>
+          <td ></td>
+          <td>
+          <td></td>
+          <td></td>
+          </tr>
+          </table>
+
+  </body>
+</html>

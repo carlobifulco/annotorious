@@ -1,0 +1,174 @@
+/* @override 
+	http://localhost:4567/css/style.css */
+
+/* tables */
+table.tablesorter {
+	font-family:arial;
+	background-color: #CDCDCD;
+	margin:10px 0pt 15px;
+	font-size: 8pt;
+	width: 100%;
+	text-align: left;
+}
+table.tablesorter thead tr th, table.tablesorter tfoot tr th {
+	background-color: #e6EEEE;
+	border: 1px solid #FFF;
+	font-size: 8pt;
+	padding: 4px;
+}
+table.tablesorter thead tr .header {
+	background-image: url(bg.gif);
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;
+}
+table.tablesorter tbody td {
+	color: #3D3D3D;
+	padding: 4px;
+	background-color: #FFF;
+	vertical-align: top;
+}
+table.tablesorter tbody tr.odd td {
+	background-color:#F0F0F6;
+}
+table.tablesorter thead tr .headerSortUp {
+	background-image: url(asc.gif);
+}
+
+#login h5 {
+	font-size: 20px;
+}
+
+table.tablesorter thead tr .headerSortDown {
+	background: url(desc.gif) #ea5252;
+	border-color: #d31e1e;
+}
+table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
+background-color: #8dbdd8;
+border-color: #e92323;
+}
+
+/* cbb */
+
+.openseadragon {
+    width:      800px;
+    height:     600px;
+    border:     1px solid black;
+    color:      #333; /* text color for messages */
+    background-color: black;
+}
+
+.download { float: right; }
+.navigation{
+    border-left: 1px dotted #999;
+    float: right;
+    width: 200px;
+    clear: both;
+    margin: 20px;
+}
+.navigation ul{
+    margin: 0 0 0 25px;
+    padding: 10px;
+    list-style: square;
+    
+}
+.navigation ul li{
+    margin-bottom: 5px;
+}
+pre { 
+    background-color: #F8F8F8;
+    border: 1px solid #CCC;
+    font-size: 13px;
+    line-height: 19px;
+    overflow: auto;
+    padding: 6px 10px;
+    border-radius: 3px;
+    color: #333;
+    width: auto;
+}
+hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
+.footer { text-align:center; padding-top:30px; font-style: italic; }
+
+/*
+ from openseadragon demos
+ */
+.openseadragon
+{
+    width:      1200px;
+    height:     800px;
+    border:     1px solid black;
+    color:      #333; /* text color for messages */
+    background-color: black;
+}
+.openseadragon-small
+{
+    width:      40px;
+    height:     30px;
+    border:     1px solid black;
+    color:      #333; /* text color for messages */
+    background-color: black;
+}
+.demoheading {
+    color: #437AB2; 
+    padding: 0 0 0 1em;
+}
+.toolbar
+{
+    width:      800px;
+    height:     33px;
+    border:     none;
+    color:      #333;
+    padding:    4px;
+    background-color: transparent;
+}
+.toolbar.fullpage{
+    width:      100%;
+    border:     none;
+    position:   fixed;
+    z-index:    999999;
+    left:       0;
+    top:        0;
+    background-color: transparent;
+}
+.navigator .highlight
+{
+    opacity:    0.4;
+    filter:     alpha(opacity=40);
+    border:     2px solid #900;
+    outline:    none;
+    background-color: #900;
+    
+}
+.highlight
+{
+    opacity:    0.4;
+    filter:     alpha(opacity=40);
+    border:     2px solid #0A7EbE;
+    outline:    10px auto #0A7EbE;
+    background-color: white;
+}
+.highlight:hover, .highlight:focus
+{
+    filter:     alpha(opacity=70);
+    opacity:    0.7;
+    background-color: transparent;
+}
+
+
+
+
+
+#path_tracker img {
+	position: absolute;
+	top: 10%;
+	right: 10%;
+	bottom: 10%;
+	left: 10%;
+}
+
+#copyright {
+	position: absolute;
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	top: 600px;
+	left: 70px;
+}

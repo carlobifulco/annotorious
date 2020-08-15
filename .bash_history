@@ -1,0 +1,4 @@
+ls
+ruby
+$PATH
+exit

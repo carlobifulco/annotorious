@@ -1,0 +1,6 @@
+# tiled slides
+public/cases/*
+	
+# ignore .git and .cache folders
+.git
+.cache

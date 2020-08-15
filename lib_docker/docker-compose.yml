@@ -1,0 +1,17 @@
+app:
+  image: carlobifulco/pdx_slide_server
+  volumes:
+  # socket
+    - /var/run/docker.sock:/var/run/docker.sock
+  # database
+    - syapse_db_store:/data/db/mongodbs/syapse
+    #public
+    - /data/wsi_deep_zoom:/pdx_slide_server/public
+
+  # robert syapse directories
+
+  command:  sh -c 'git pull && rm Gemfile.lock && bundle update && bundle exec ruby server.rb -p 7563
+  ports:
+    - '7563:7563'
+  env_file: .env
+  restart: always
